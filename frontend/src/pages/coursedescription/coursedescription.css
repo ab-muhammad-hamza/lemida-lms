@@ -2,6 +2,7 @@
   padding: 80px 0;
   text-align: center;
   min-height: 55vh;
+  color: white;
 
   .course-header {
     display: flex;
@@ -23,12 +24,12 @@
 
       h2 {
         font-size: 24px;
-        color: #333;
+        color: #ffffff;
       }
 
       p {
         font-size: 14px;
-        color: #666;
+        color: #d4d4d4;
         margin: 5px 0;
       }
     }

@@ -51,30 +51,25 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <motion.section
+      <section
         className="courses-section"
         initial="hidden"
         animate="visible"
         variants={fadeInVariants}
       >
-        <div className="courses">
-          <motion.h2 variants={fadeInVariants}>Available Courses</motion.h2>
-          <p>Learn expert skills from experts themselves</p>
-
-          <div className="course-container">
-            {courses && courses.length > 0 ? (
-              courses.map((e) => (
-                <motion.div key={e._id} variants={fadeInVariants}>
-                  <CourseCard course={e} />
-                </motion.div>
-              ))
-            ) : (
-              <p style={{color: "white"}}>No Courses Yet!</p>
-            )}
-          </div>
-          <Link to={"/courses"}><button className="common-btn">Explore More</button></Link>
+      <div className="courses">
+        <h2>Available Courses</h2>
+        <p>Learn expert skills from experts themselves</p>
+  
+        <div className="course-container">
+          {courses && courses.length > 0 ? (
+            courses.map((e) => <CourseCard key={e._id} course={e} />)
+          ) : (
+            <p style={{color: "white"}}>No Courses Yet!</p>
+          )}
         </div>
-      </motion.section>
+      </div>
+      </section>
       <Testimonials />
     </div>
   );

@@ -164,5 +164,3 @@ export const resetPassword = TryCatch(async (req, res) => {
 
   res.json({ message: "Password Reset" });
 });
-
-module.exports = app;

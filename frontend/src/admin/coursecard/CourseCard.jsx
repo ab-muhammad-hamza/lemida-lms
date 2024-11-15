@@ -36,7 +36,7 @@ const CourseCard = ({ course }) => {
       <div className="not-image">
         <div className="info-box">
           <p alt="Teacher"><FaChalkboardTeacher /> &nbsp;{course.createdBy}</p>
-          <p alt="Duration"><FaRegClock /> &nbsp;{course.duration} weeks</p>
+          <p alt="Duration"><FaRegClock /> &nbsp;{course.duration} Hours</p>
         </div>
         <h3>{course.title}</h3>
         <p>{course.description}</p>
