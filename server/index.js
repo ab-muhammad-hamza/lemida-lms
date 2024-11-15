@@ -17,7 +17,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const port = 8001;
+// const port = 8001;
 
 app.get("/", (req, res) => {
   res.send("Server is working");
@@ -35,7 +35,11 @@ app.use("/api", userRoutes);
 app.use("/api", courseRoutes);
 app.use("/api", adminRoutes);
 
-app.listen(port, () => {
+/* app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
   connectDb();
 });
+*/
+
+// Export the app for Vercel
+export default app;
