@@ -4,7 +4,7 @@ import App from "./App.jsx";
 import { UserContextProvider } from "./context/UserContext.jsx";
 import { CourseContextProvider } from "./context/CourseContext.jsx";
 
-export const server = process.env.MainDomainName;
+export const server = "https://lemida-lms.vercel.app/";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
