@@ -1,7 +1,3 @@
-# Demonstration Video
-https://github.com/ab-muhammad-hamza/lemida-lms/raw/refs/heads/main/Docs/DemonstrationVideo.mp4
-
----
 <div align="center">
 
 <img src="https://i.imgur.com/wshEvXz.png" alt="NumberDeck Cover">
